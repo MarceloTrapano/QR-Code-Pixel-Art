@@ -80,3 +80,12 @@ python main.py -i input.png -v 1 -u "https://example.com" -o 0.7 -r 480 -f outpu
 - `-r`, `--resolution` : Final output resolution in pixels (default: 480)
 
 - `-f`, `--filepath` : Path to save the generated image (default: output.png)
+
+
+
+<br>
+<br>
+<br>
+<div align="center">
+  <img src="not_rick_roll.png" alt="not rick roll" width="480"/>
+</div>
