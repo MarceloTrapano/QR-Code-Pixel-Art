@@ -1,7 +1,7 @@
 [project]
 name = "qr-code-pixel-art"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "Convert your pixelart into qr code"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
