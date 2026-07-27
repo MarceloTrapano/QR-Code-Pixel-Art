@@ -62,10 +62,3 @@ class ImageJoinFactory(IImageJoinFactory):
         r, g, b, a = img.split()
         a = a.point(lambda px: int(px * opacity))
         return Image.merge("RGBA", (r, g, b, a))
-
-
-if __name__ == "__main__":
-    image = Image.open("serious.png")
-    factory = ImageJoinFactory(10)
-    factory.build("https://www.youtube.com/watch?v=PoyejjJGajk", image)
-    factory.image.save("why_so.png")

@@ -80,11 +80,3 @@ class QRCodeSplitter(IQRCodeSplitter):
         combined_mask = cv2.bitwise_and(square_mask, noise_mask)
 
         return cv2.merge([self.np_image, self.np_image, self.np_image, combined_mask])
-
-
-if __name__ == "__main__":
-    image = Image.open("dupa4.png")
-    splitter = QRCodeSplitter(image)
-    splitter.split()
-
-    cv2.imwrite("mask.png", splitter.squares)

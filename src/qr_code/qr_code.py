@@ -24,9 +24,3 @@ class QRCode(IQRCode):
 
         if filename:
             self.image.save(filename)
-
-
-if __name__ == "__main__":
-    for ver in range(1, 25):
-        qr = QRCode("https://www.youtube.com", version=ver)
-        qr.generate(filename=f"dupa{ver}.png")
